@@ -13,6 +13,17 @@ class Price extends Model implements Auditable
     use HasFactory;
 
     protected $table = 'price';
+
+    protected $fillable = [
+        'name',
+        'price',
+        'start_price',
+        'enabled',
+        'item_pricing_id',
+        'created_at',
+        'updated_at',
+        '_token',
+    ];
     protected $casts = [
         'enabled' => 'integer',
         'created_at' => 'datetime',
