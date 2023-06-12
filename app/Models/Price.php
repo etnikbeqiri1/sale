@@ -13,21 +13,6 @@ class Price extends Model implements Auditable
     use HasFactory;
 
     protected $table = 'price';
-
-    /**
-     * Attributes to include in the Audit.
-     *
-     * @var array
-     */
-    protected $auditInclude = [
-        'name',
-        'price',
-        'start_price',
-        'enabled',
-        'item_pricing_id',
-        'created_at',
-        'updated_at',
-    ];
     protected $casts = [
         'enabled' => 'integer',
         'created_at' => 'datetime',
