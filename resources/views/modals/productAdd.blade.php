@@ -38,11 +38,11 @@
                             <tbody>
                             @foreach($products as $product)
                                 <tr class="bg-white border-b hover:bg-gray-50" data-id="{{$product->id}}">
-                                    <td class="m-4">
+                                    <td class="m-4 p-2">
                                         <img class="object-contain h-16 w-10" src="{{ $product->image }}"
                                              alt="{{$product->name}}">
                                     </td>
-                                    <td class="px-6 py-4 font-semibold text-gray-900">
+                                    <td class="px-6 py-4 font-light text-gray-900 text-lg">
                                         {{ $product->name }}
                                     </td>
                                     <td class="px-6 py-4">
@@ -79,7 +79,7 @@
                                             </button>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 font-semibold text-gray-900">
+                                    <td class="px-6 py-4 font-light text-gray-900 text-lg">
                                         {{ $product->price }}€
                                     </td>
                                 </tr>

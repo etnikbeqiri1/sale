@@ -1,6 +1,7 @@
 <tr class="bg-white border-b hover:bg-gray-50">
-    <td class="w-28 p-4">
-        <img class="h-12 object-cover w-4" src="{{ $product->image }}" alt="{{$product->name}}">
+    <td class="m-4 pl-2">
+        <img class="object-contain h-16 w-10" src="{{ $product->image }}"
+             alt="{{$product->name}}">
     </td>
     <td class="px-6 py-4 font-semibold text-gray-800">
         {{ $product->name }}

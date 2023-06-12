@@ -78,7 +78,7 @@
                             class="w-24 h-32 max-w-xs overflow-hidden rounded-lg drop-shadow-sm shadow-md bg-white hover:shadow-lg transition-shadow duration-300 ease-in-out"
                         >
                             <div class="flex flex-row justify-between">
-                                <div class="flex-1 pt-1">
+                                <div class="flex-1 pt-1 pl-1">
                                     <img class="object-contain h-20 w-12"
                                          src="{{ $product->image }}"
                                          alt="{{ $product->name }}">
