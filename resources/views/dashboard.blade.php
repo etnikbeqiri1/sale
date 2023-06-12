@@ -33,7 +33,7 @@
     </x-slot>
 
     <div class="m-1">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-12xl mx-auto sm:px-6 lg:px-8">
             <div class="flex flex-wrap">
                 @foreach($items as $item)
                     @if($item->state == 0)

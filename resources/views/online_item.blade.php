@@ -7,10 +7,11 @@
 
     $roundedPrice = ceil($price / 0.05) * 0.05; // Round up to the nearest 0.05 increment
     $price = max($roundedPrice, $minPrice); // Ensure the price is at least the minimum price
+    $displayPrice = $item->allProductPrice + $price;
 
     $finalPrice = number_format((float)$price, 2, '.', '');
 @endphp
-<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-3">
+<div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-3">
     <div
         class="animation-pulse w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 flex flex-col justify-between"
         style="height: 500px">
@@ -23,7 +24,7 @@
                              alt="{{ $item->name }}">
                     </div>
                     <div>
-                        <p class="font-bold text-4xl"> {{$finalPrice}}€</p>
+                        <p class="font-bold text-4xl"> {{number_format($displayPrice, 2, ".", ".")}}€</p>
                         <p class="flex justify-end font-extralight text-2xl">{{ $item->session->started_at->diff(now())->format('%h:%I:%S') }}</p>
                         <div class="flex flex-row justify-end">
                             @php

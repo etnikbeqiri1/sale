@@ -1,4 +1,4 @@
-<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-3">
+<div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-3">
     <div
         class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8flex flex-col justify-between"
         style="height: 500px">
