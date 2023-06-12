@@ -22,7 +22,6 @@ class Price extends Model implements Auditable
         'item_pricing_id',
         'created_at',
         'updated_at',
-        '_token',
     ];
     protected $casts = [
         'enabled' => 'integer',
