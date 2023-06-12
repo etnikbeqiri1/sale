@@ -6,7 +6,7 @@
             <div class="flex-shrink-0">
                 <img class="w-32 h-32 rounded-xl border-white"
                      src="/storage/images/ps{{ $item->name[2] }}.jpg"
-                     alt="Neil image">
+                     alt="{{ $item->name }}">
             </div>
         </div>
         <div class="mb-32">

@@ -28,8 +28,8 @@ class DashboardController extends Controller
 
             if ($item->state === 0) {
                 $itemPricingId = $item->item_pricing_id;
-                $item->prices = array_filter($prices->toArray(), function ($item) {
-                    return $item['item_pricing_id'] === 8;
+                $item->prices = array_filter($prices->toArray(), function ($item) use ($itemPricingId) {
+                    return $item['item_pricing_id'] === $itemPricingId;
                 });
                 $item->pastSession = $item->sessions()->orderBy('ended_at', 'desc')->first();
 
