@@ -16,7 +16,7 @@
             <div class="p-6 text-center">
                 <h1 class="text-3xl font-light flex flex-row justify-center">{{$item->name}} <p class="font-extralight">
                         &nbsp;&nbsp; Add Products</p></h1>
-                @if($products->count() > 1)
+                @if($products->count() >= 1)
                     <div class="relative overflow-x-auto mt-4 shadow-md sm:rounded-lg">
                         <table class="w-full text-sm text-left text-gray-500" id="products_table_{{$item->id}}">
                             <thead class="text-xs text-orange-500 uppercase bg-gray-50">
