@@ -1,7 +1,7 @@
-<div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-3">
+<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 2xl:w-1/5 p-3">
     <div
         class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8flex flex-col justify-between"
-        style="height: 500px">
+        style="">
         <div class="flow-root">
             <div class="flex-shrink-0">
                 <img class="w-32 h-32 rounded-xl border-white"
@@ -9,7 +9,7 @@
                      alt="{{ $item->name }}">
             </div>
         </div>
-        <div class="mb-32">
+        <div class="mb-4">
             <div>
                 <p class="flex justify-items-start font-extralight text-lg text-gray-500">Last Active
                     Time</p>
