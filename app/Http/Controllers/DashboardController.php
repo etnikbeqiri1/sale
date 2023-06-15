@@ -14,9 +14,9 @@ class DashboardController extends Controller
     {
         $queryName = $request->get('name');
         if ($queryName !== null) {
-            $items = Item::where(['enabled' => 1])->orderBy('state', 'desc')->where('name', 'like', '%' . $queryName . '%')->get();
+            $items = Item::where(['enabled' => 1])->orderBy('order_number', 'desc')->where('name', 'like', '%' . $queryName . '%')->get();
         } else {
-            $items = Item::where(['enabled' => 1])->orderBy('state', 'desc')->get();
+            $items = Item::where(['enabled' => 1])->orderBy('order_number', 'desc')->get();
         }
 
         $sessions = Session::where(['paid' => 0, 'ended_at' => null])->get();

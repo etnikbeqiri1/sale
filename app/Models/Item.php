@@ -20,6 +20,7 @@ class Item extends Model implements Auditable
         'item_pricing_id',
         'created_at',
         'updated_at',
+        'order_number',
     ];
 
     protected $casts = [

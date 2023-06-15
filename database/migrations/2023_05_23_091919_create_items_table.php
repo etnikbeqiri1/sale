@@ -14,6 +14,7 @@ class CreateItemsTable extends Migration
             $table->integer('state')->default(0);
             $table->integer('enabled')->default(1);
             $table->unsignedBigInteger('item_pricing_id');
+            $table->integer('order_number')->default(69);
             $table->foreign('item_pricing_id')->references('id')->on('item_pricing');
             $table->timestamps();
         });
