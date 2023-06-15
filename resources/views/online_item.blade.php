@@ -25,7 +25,7 @@
                     </div>
                     <div>
                         <p class="font-bold text-4xl"> {{number_format($displayPrice, 2, ".", ".")}}€</p>
-                        <p class="flex justify-end font-extralight text-2xl">{{ $item->session->started_at->diff(now())->format('%h:%I:%S') }}</p>
+                        <p class="flex justify-end font-extralight text-2xl">{{ $item->session->started_at->diff(now())->format('%d:%h:%i:%s') }}</p>
                         <div class="flex flex-row justify-end">
                             @php
                                 $personNumber = $item->session->price->name[0];
