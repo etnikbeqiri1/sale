@@ -4,7 +4,7 @@
         style="">
         <div class="flow-root">
             <div class="flex-shrink-0">
-                <img class="w-32 h-32 rounded-xl border-white"
+                <img class="w-28 h-28 rounded-xl border-white"
                      src="/storage/images/ps{{ $item->name[2] }}.jpg"
                      alt="{{ $item->name }}">
             </div>
