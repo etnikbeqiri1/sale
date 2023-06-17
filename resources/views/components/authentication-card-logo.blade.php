@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64" id="gaming" {{ $attributes }}>
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64" id="gaming">
     <defs>
         <linearGradient id="a" x1="8.837" x2="52.552" y1="2.299" y2="55.156" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#fff"></stop>
