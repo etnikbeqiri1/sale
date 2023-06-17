@@ -12,7 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('backup:database')->everyMinute();
+        $schedule->command('backup:database')->everyTwoHours();
 
     }
 
