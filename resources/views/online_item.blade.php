@@ -100,7 +100,7 @@
                 <button
                     data-modal-target="end-session-modal_{{$item->id}}"
                     data-modal-toggle="end-session-modal_{{$item->id}}"
-                    class="h-[4.3rem] opacity-90 rounded-lg bg-red-500 border-2 border-red-700 hover:font-bold duration-200 mr-1 text-white text-xl w-full">
+                    class="h-[4.3rem] opacity-90 rounded-lg bg-green-400 border-2 border-green-500 hover:font-bold duration-200 mr-1 text-white text-xl w-full">
                     End Session
                 </button>
             </div>
