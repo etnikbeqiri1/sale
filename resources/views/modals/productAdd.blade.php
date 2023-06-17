@@ -38,7 +38,7 @@
                             <tbody>
                             @foreach($products as $product)
                                 <tr class="bg-white border-b hover:bg-gray-50" data-id="{{$product->id}}">
-                                    <td class="m-4 p-2">
+                                    <td class="">
                                         <img class="object-contain h-16 w-10" src="{{ $product->image }}"
                                              alt="{{$product->name}}">
                                     </td>
