@@ -13,7 +13,7 @@
 @endphp
 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 2xl:w-1/5 p-3">
     <div
-        class="animation-pulse w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow flex flex-col justify-between"
+        class="animation-pulse w-full max-w-md p-4 bg-white border border-green-400 rounded-lg shadow flex flex-col justify-between"
         style="">
         <div class="flow-root">
             <div class="flex-shrink-0 flex flex-col">
