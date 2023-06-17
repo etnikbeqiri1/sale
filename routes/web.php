@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StatsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ItemPricingController;
@@ -72,6 +73,7 @@ Route::middleware([
     Route::post('/sessions/{sessionId}/products', [SessionController::class, 'addProductToSession']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/stats', [StatsController::class, 'index'])->name('stats');
 
 
 });

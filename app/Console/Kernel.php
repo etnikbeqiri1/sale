@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         $schedule->command('backup:database')->everyTwoHours();
+        $schedule->command('redis:update-stats')->everyFiveMinutes();
 
     }
 
@@ -22,7 +23,6 @@ class Kernel extends ConsoleKernel
     protected function commands(): void
     {
         $this->load(__DIR__.'/Commands');
-        $this->load(__DIR__.'/Commands/BackupDatabase.php');
         require base_path('routes/console.php');
     }
 }
