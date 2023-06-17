@@ -20,7 +20,7 @@ use App\Http\Controllers\PriceController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 Route::middleware([
@@ -28,9 +28,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-//    Route::get('/dashboard', function () {
-//        return view('dashboard');
-//    })->name('dashboard');
 
     Route::get('/prices', [PriceController::class, 'index'])->name('prices.index');
     Route::get('/prices/create', [PriceController::class, 'create'])->name('prices.create');
