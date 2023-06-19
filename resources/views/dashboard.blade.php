@@ -54,21 +54,11 @@
 
         @keyframes pulse {
             0% {
-                transform: scale(1);
                 box-shadow: 0 0 0 2px rgba(24, 255, 98, 0.42);
             }
 
-            25% {
-                transform: scale(0.98);
-            }
-
             70% {
-                transform: scale(1.01);
                 box-shadow: 0 0 0 16px rgba(14, 148, 10, 0.01);
-            }
-
-            100% {
-                transform: scale(1);
             }
 
         }
