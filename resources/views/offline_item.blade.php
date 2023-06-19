@@ -3,35 +3,23 @@
         class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8flex flex-col justify-between"
         style="">
         <div class="flow-root">
-            <div class="flex-shrink-0">
-                <img class="w-32 h-32 rounded-xl border-white"
-                     src="/storage/images/ps{{ $item->name[2] }}.jpg"
-                     alt="{{ $item->name }}">
-            </div>
-        </div>
-        <div class="mb-4">
-            <div>
-                <p class="flex justify-items-start font-extralight text-lg text-gray-500">Last Active
-                    Time</p>
-            </div>
-            <div
-                class="flex pb-10
-                                pointer-events-none rounded cursor-not-allowed"
-            >
-                <div
-                    class="flex flex-nowrap"
-                >
-                    <div class="inline-block px-1">
-                        <none class="text-gray-400 font-bold">
-                            {{$item->pastSession ? $item->pastSession->ended_at->diffForHumans() : "Never"}}
-                        </none>
+            <div class="flex-shrink-0 flex flex-col">
+                <div class="flex flex-row justify-between">
+                    <div>
+                        <img class="w-32 h-32 rounded-xl border-white"
+                             src="/storage/images/ps{{ $item->name[2] }}.jpg"
+                             alt="{{ $item->name }}">
+                    </div>
+                    <div>
+                        <p class="font-light text-xl opacity-40">Last Active</p>
+                        <p class="flex justify-end font-light opacity-60 text-xl">{{$item->pastSession ? $item->pastSession->ended_at->diffForHumans() : "Never"}}</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
                 <h1 class="text-3xl font-bold leading-none text-gray-900">{{ $item->name }}</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -43,12 +31,12 @@
 
                         <button data-modal-target="start-session-modal_{{$item->id}}_{{$personNumber}}"
                                 data-modal-toggle="start-session-modal_{{$item->id}}_{{$personNumber}}"
-                                class="opacity-90 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg border border-orange-500 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:font-bold duration-200 mr-1 text-white w-full">
+                                class="opacity-90 h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg border border-orange-500 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:font-bold duration-200 mr-1 text-white w-full">
                             <div class="flex justify-center align-middle">
                                 @for ($i = 0; $i < $personNumber; $i++)
                                     <svg xmlns="http://www.w3.org/2000/svg"
-                                         class="icon icon-tabler icon-tabler-user -mr-2" width="24" height="24"
-                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                         class="icon icon-tabler icon-tabler-user -mr-1" width="20" height="20"
+                                         viewBox="0 0 20 20" stroke-width="2" stroke="currentColor" fill="none"
                                          stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
